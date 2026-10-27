@@ -1,0 +1,130 @@
+/* --- Global & Tipografia --- */
+body {
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+}
+
+/* --- Cabeçalho e Navegação --- */
+.cabecalho {
+    background-color: #003049;
+    color: white;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.menu a:hover {
+    color: #e5989b;
+}
+
+/* --- Secções e Flexbox --- */
+section {
+    background-color: #ffffff;
+    margin: 75px auto;
+    padding: 75px;
+    width: 85%;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.perfil, .cartas {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.cartas {
+    justify-content: space-between;
+}
+.carta {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+/* --- Imagem --- */
+.perfil-foto {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #003049;
+}
+
+/* --- Tabela --- */
+.tabela-container {
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+th {
+    background-color: #003049;
+    color: white;
+}
+
+/* --- Formulário --- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+}
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 10px;
+    background-color: #003049;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1d5f8a;
+}
+
+/* --- Rodapé --- */
+.rodape {
+    text-align: center;
+    padding: 2px;
+    background-color: #222;
+    color: white;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        gap: 2px;
+        text-align: center;
+    }
+    .menu a {
+        margin: 2px;
+    }
+    .perfil, .cartas {
+        flex-direction: column;
+    }
+}
